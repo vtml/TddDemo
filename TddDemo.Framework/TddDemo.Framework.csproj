@@ -47,10 +47,11 @@
     <Compile Include="Models\Airport.cs" />
     <Compile Include="Models\DataModels\EntryDataModel.cs" />
     <Compile Include="Models\FormModels\EntryFormModel.cs" />
+    <Compile Include="Models\Mappers\EntryFormModelToEntryDataModelMapper.cs" />
+    <Compile Include="Models\Mappers\IMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Mappers\" />
     <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

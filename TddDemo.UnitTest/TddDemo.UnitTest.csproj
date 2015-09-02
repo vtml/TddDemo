@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\FormModels\EntryFormModelTest.cs" />
+    <Compile Include="Models\Mappers\EntryFormModelToEntryDataModelMapperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

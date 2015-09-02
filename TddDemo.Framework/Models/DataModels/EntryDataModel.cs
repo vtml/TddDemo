@@ -8,7 +8,6 @@ namespace TddDemo.Framework.Models.DataModels
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public Guid AirportId { get; set; }
         public virtual IAirport Airport { get; set; }
         public int NumberOfPets { get; set; }
     }

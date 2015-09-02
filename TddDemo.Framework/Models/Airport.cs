@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using TddDemo.Framework.Data;
 
 namespace TddDemo.Framework.Models
 {
-    public partial interface IAirport
+    public interface IAirport : IEntity
     {
-        Guid Id { get; set; }
-        
         string AirportCode { get; set; }
 
         string AirportName { get; set; }
@@ -16,7 +15,7 @@ namespace TddDemo.Framework.Models
         string Longitude { get; set; }
     }
 
-    public partial class Airport : IAirport
+    public class Airport : IAirport
     {
         public Guid Id { get; set; }        
         public virtual string AirportCode { get; set; }
