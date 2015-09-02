@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.Web", "TddDemo.Web\TddDemo.Web.csproj", "{F95194D5-BA8E-4ED1-8669-9B4BECC0E964}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.Framework", "TddDemo.Framework\TddDemo.Framework.csproj", "{EAEC4A5D-91C6-4843-966B-1656555BB314}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.UnitTest", "TddDemo.UnitTest\TddDemo.UnitTest.csproj", "{C027C97F-AC3C-4BCA-8AFC-8110FAB861D2}"
@@ -22,10 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F95194D5-BA8E-4ED1-8669-9B4BECC0E964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F95194D5-BA8E-4ED1-8669-9B4BECC0E964}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F95194D5-BA8E-4ED1-8669-9B4BECC0E964}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F95194D5-BA8E-4ED1-8669-9B4BECC0E964}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EAEC4A5D-91C6-4843-966B-1656555BB314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EAEC4A5D-91C6-4843-966B-1656555BB314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAEC4A5D-91C6-4843-966B-1656555BB314}.Release|Any CPU.ActiveCfg = Release|Any CPU
