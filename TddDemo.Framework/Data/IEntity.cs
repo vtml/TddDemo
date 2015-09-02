@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TddDemo.Framework.Data
 {
-    class Repository
+    public interface IEntity
     {
+        Guid Id { get; set; }
     }
 }
