@@ -7,7 +7,7 @@ using TddDemo.Framework.Models;
 using TddDemo.Framework.Models.FormModels;
 using TddDemo.Framework.Models.Mappers;
 
-namespace TddDemo.UnitTest.Models.Mappers
+namespace TddDemo.Framework.UnitTest.Models.Mappers
 {
     public class EntryFormModelToEntryDataModelMapperTest
     {

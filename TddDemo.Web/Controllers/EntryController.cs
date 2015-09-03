@@ -1,105 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using TddDemo.Framework.Models.DataModels;
+using TddDemo.Framework.Models.FormModels;
+using TddDemo.Framework.Models.Mappers;
 
 namespace TddDemo.Web.Controllers
 {
     public class EntryController : Controller
     {
-        //
-        // GET: /Entry/
+        private readonly IMapper<EntryFormModel, EntryDataModel> _mapper;
+
+        public EntryController(IMapper<EntryFormModel, EntryDataModel> mapper)
+        {
+            _mapper = mapper;
+        }
 
         public ActionResult Index()
         {
             return View();
         }
-
-        //
-        // GET: /Entry/Details/5
-
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        //
-        // GET: /Entry/Create
-
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        //
-        // POST: /Entry/Create
-
+        
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(EntryFormModel entry)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            if (!ModelState.IsValid) return RedirectToAction("Index");
+            var entryDataModel = _mapper.Map(entry);
+            return entryDataModel.Airport != null ? RedirectToAction("Detail", new {entry = entryDataModel}) : RedirectToAction("Index");
         }
 
-        //
-        // GET: /Entry/Edit/5
-
-        public ActionResult Edit(int id)
+        public ActionResult Detail(EntryDataModel entry)
         {
-            return View();
-        }
-
-        //
-        // POST: /Entry/Edit/5
-
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        //
-        // GET: /Entry/Delete/5
-
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: /Entry/Delete/5
-
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            return View(entry);
         }
     }
 }

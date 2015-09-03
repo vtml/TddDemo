@@ -7,8 +7,8 @@
     <ProjectGuid>{C027C97F-AC3C-4BCA-8AFC-8110FAB861D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TddDemo.UnitTest</RootNamespace>
-    <AssemblyName>TddDemo.UnitTest</AssemblyName>
+    <RootNamespace>TddDemo.Framework.UnitTest</RootNamespace>
+    <AssemblyName>TddDemo.Framework.UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

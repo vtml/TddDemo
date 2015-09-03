@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.Framework", "TddDemo.Framework\TddDemo.Framework.csproj", "{EAEC4A5D-91C6-4843-966B-1656555BB314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.UnitTest", "TddDemo.UnitTest\TddDemo.UnitTest.csproj", "{C027C97F-AC3C-4BCA-8AFC-8110FAB861D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.Framework.UnitTest", "TddDemo.UnitTest\TddDemo.Framework.UnitTest.csproj", "{C027C97F-AC3C-4BCA-8AFC-8110FAB861D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{20551E20-5F94-4C21-837E-97E772BB2212}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,6 +19,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{5A114902-A7BE-46D8-9A1D-2C8D162BF2BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.Web", "TddDemo.Web\TddDemo.Web.csproj", "{48CDB3E1-D017-4E5D-8780-E5F88A737028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddDemo.Web.UnitTest", "TddDemo.Web.UnitTest\TddDemo.Web.UnitTest.csproj", "{B0FAF9E0-D8F7-4E85-ABF3-C806AA828225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{48CDB3E1-D017-4E5D-8780-E5F88A737028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48CDB3E1-D017-4E5D-8780-E5F88A737028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48CDB3E1-D017-4E5D-8780-E5F88A737028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FAF9E0-D8F7-4E85-ABF3-C806AA828225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FAF9E0-D8F7-4E85-ABF3-C806AA828225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FAF9E0-D8F7-4E85-ABF3-C806AA828225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FAF9E0-D8F7-4E85-ABF3-C806AA828225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +52,6 @@ Global
 		{EAEC4A5D-91C6-4843-966B-1656555BB314} = {4934E963-EA55-4815-8D07-FCA6219385A4}
 		{C027C97F-AC3C-4BCA-8AFC-8110FAB861D2} = {5A114902-A7BE-46D8-9A1D-2C8D162BF2BF}
 		{48CDB3E1-D017-4E5D-8780-E5F88A737028} = {4934E963-EA55-4815-8D07-FCA6219385A4}
+		{B0FAF9E0-D8F7-4E85-ABF3-C806AA828225} = {5A114902-A7BE-46D8-9A1D-2C8D162BF2BF}
 	EndGlobalSection
 EndGlobal

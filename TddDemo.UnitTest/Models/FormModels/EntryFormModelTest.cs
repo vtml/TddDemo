@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Ploeh.AutoFixture.Kernel;
 using TddDemo.Framework.Models.FormModels;
 
-namespace TddDemo.UnitTest.Models.FormModels
+namespace TddDemo.Framework.UnitTest.Models.FormModels
 {
     public class EntryFormModelTest
     {
